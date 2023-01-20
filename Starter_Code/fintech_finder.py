@@ -322,23 +322,22 @@ if st.sidebar.button("Send Transaction"):
     # Call the `send_transaction` function and pass it 3 parameters:
     # Your `account`, the `candidate_address`, and the `wage` as parameters
     # Save the returned transaction hash as a variable named `transaction_hash`
-    :
-            send_transaction = {
+        send_transaction = {
         "account": account,
         "from": candidate.address,
         "value": wage,
     }
 
-    send_transction = transaction_hash
+        send_transction = transaction_hash
 
     # Markdown for the transaction hash
-    st.sidebar.markdown("#### Validated Transaction Hash")
+        st.sidebar.markdown("#### Validated Transaction Hash")
 
     # Write the returned transaction hash to the screen
-    st.sidebar.write(transaction_hash)
+        st.sidebar.write(transaction_hash)
 
     # Celebrate your successful payment
-    st.balloons()
+        st.balloons()
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
