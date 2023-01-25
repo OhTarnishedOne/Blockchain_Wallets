@@ -1,4 +1,4 @@
-# Cryptocurrency Wallet
+ # Cryptocurrency Wallet
 
 ################################################################################
 # For this Challenge, you will assume the perspective of a Fintech Finder
@@ -128,7 +128,7 @@ st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 
 # @TODO:
 #  Call the `generate_account` function and save it as the variable `account`
-account = generate_account()
+"account = generate_account()"
 
 ##########################################
 
