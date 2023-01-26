@@ -144,8 +144,7 @@ st.sidebar.write(account.address)
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-get_balance = w3.eth.get_balance(address)
-st.sidebar.write(ether)
+st.sidebar.write(get_balance(w3,account.address))
 
 ##########################################
 
@@ -286,7 +285,7 @@ if st.sidebar.button("Send Transaction"):
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
-get_people()
+get_people(w3)
 
 ################################################################################
 # Step 3: Inspect the Transaction
